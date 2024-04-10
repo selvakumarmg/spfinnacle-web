@@ -1,0 +1,249 @@
+<div className="absolute left-0 right-0 top-1/4 m-auto flex w-full max-w-[1258px] flex-col items-start gap-[37px] md:p-5">
+              <Heading as="h4" className="w-[72%] !text-pink-A400 md:w-full">
+                <span className="text-pink-A400">
+                  <>
+                    EMI Calculator
+                    <br />
+                  </>
+                </span>
+                <span className="text-gray_700">
+                  EMI Calculator for Home Loan, Car Loan & Personal Loan in
+                  India
+                </span>
+              </Heading>
+              <div className="relative h-[1414px] self-stretch rounded-lg bg-[url(/public/images/img_group_35.svg)] bg-cover bg-no-repeat p-[23px] sm:p-5">
+                <div className="absolute left-[28.68px] top-[23.77px] m-auto flex w-[39%] flex-wrap justify-between gap-5">
+                  <Text as="p" className="!font-medium !text-pink-A400">
+                    Home Loan
+                  </Text>
+                  <Text as="p" className="!font-medium">
+                    Personal Loan
+                  </Text>
+                  <Text as="p" className="!font-medium">
+                    Business Loan
+                  </Text>
+                </div>
+                <Text
+                  as="p"
+                  className="absolute left-[28.68px] top-[8%] m-auto !text-blue_gray-900"
+                >
+                  Home Loan Amount
+                </Text>
+                <Text
+                  as="p"
+                  className="absolute left-[28.68px] top-1/4 m-auto !text-blue_gray-900"
+                >
+                  Interest Rate
+                </Text>
+                <Text
+                  as="p"
+                  className="absolute left-[28.68px] top-[42%] m-auto !text-blue_gray-900"
+                >
+                  Loan Tenure
+                </Text>
+                <div className="absolute left-[19%] top-[8%] m-auto flex w-[17%] flex-col items-end">
+                  <div className="flex self-stretch rounded border border-solid border-pink-A400 bg-pink-700_0f p-2.5">
+                    <Text
+                      as="p"
+                      className="ml-3.5 self-end !text-blue_gray-900 md:ml-0"
+                    >
+                      5,00,000
+                    </Text>
+                  </div>
+                  <Button className="relative mt-[-49px] min-w-[44px] rounded-br rounded-tr">
+                    ₹
+                  </Button>
+                </div>
+                <div className="absolute left-[19%] top-[24%] m-auto flex w-[17%] flex-col items-end">
+                  <div className="flex self-stretch rounded border border-solid border-pink-A400 bg-pink-700_0f p-[11px]">
+                    <Text
+                      as="p"
+                      className="ml-[13px] !text-blue_gray-900 md:ml-0"
+                    >
+                      9
+                    </Text>
+                  </div>
+                  <Button className="relative mt-[-49px] min-w-[44px] rounded-br rounded-tr">
+                    %
+                  </Button>
+                </div>
+                <div className="absolute left-[19%] top-[41%] m-auto flex w-[21%] flex-col items-end">
+                  <div className="flex items-center justify-between gap-5 self-stretch rounded border border-solid border-pink-A400 bg-pink-700_0f">
+                    <Text as="p" className="ml-6 !text-blue_gray-900">
+                      12M
+                    </Text>
+                    <Button
+                      color="pink_800"
+                      className="min-w-[44px] rounded-br rounded-tr"
+                    >
+                      Mo
+                    </Button>
+                  </div>
+                  <Button
+                    shape="square"
+                    className="relative mr-[45px] mt-[-49px] min-w-[44px] md:mr-0"
+                  >
+                    Yr
+                  </Button>
+                </div>
+                <div className="absolute left-0 right-0 top-[14%] m-auto flex w-[97%] flex-col gap-1.5">
+                  <SeekBar
+                    inputValue={[90.81]}
+                    trackColors={["#2d96d7", "#d9d9d9"]}
+                    className="flex h-[20px] rounded"
+                    trackClassName="h-[9px] w-full rounded-bl rounded-tl"
+                    thumbClassName="flex justify-center items-center h-[20px] w-[20px] rounded-[50%] outline-none bg-blue-600"
+                  />
+                  <div className="flex flex-wrap justify-between gap-5">
+                    <Text as="p">0</Text>
+                    <Text as="p">50k</Text>
+                    <Text as="p">1L</Text>
+                    <Text as="p">1.5L</Text>
+                    <Text as="p">2L</Text>
+                    <Text as="p">2.5L</Text>
+                    <Text as="p">3L</Text>
+                    <Text as="p">3.5L</Text>
+                    <Text as="p">4L</Text>
+                    <Text as="p">4.5L</Text>
+                    <Text as="p">5L</Text>
+                    <Text as="p">5.5L</Text>
+                  </div>
+                </div>
+                <div className="absolute left-0 right-0 top-[30%] m-auto flex w-[96%] flex-col gap-1.5">
+                  <SeekBar
+                    inputValue={[27.21]}
+                    trackColors={["#2d96d7", "#d9d9d9"]}
+                    className="flex h-[20px] rounded"
+                    trackClassName="h-[9px] w-full rounded-bl rounded-tl"
+                    thumbClassName="flex justify-center items-center h-[20px] w-[20px] rounded-[50%] outline-none bg-blue-600"
+                  />
+                  <div className="flex justify-between gap-5">
+                    <Text as="p">5</Text>
+                    <Text as="p">7.5</Text>
+                    <Text as="p">10</Text>
+                    <Text as="p">12.5</Text>
+                    <Text as="p">15</Text>
+                    <div className="flex w-[10%] flex-wrap justify-between gap-5">
+                      <Text as="p">17.5</Text>
+                      <Text as="p">20</Text>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-[96%] flex-col gap-1.5">
+                  <SeekBar
+                    inputValue={[53.97]}
+                    trackColors={["#2d96d7", "#d9d9d9"]}
+                    className="flex h-[20px] rounded"
+                    trackClassName="h-[9px] w-full rounded-bl rounded-tl"
+                    thumbClassName="flex justify-center items-center h-[20px] w-[20px] rounded-[50%] outline-none bg-blue-600"
+                  />
+                  <div className="flex justify-between gap-5">
+                    <Text as="p">0</Text>
+                    <Text as="p">3</Text>
+                    <Text as="p">9</Text>
+                    <Text as="p">12</Text>
+                    <Text as="p">16</Text>
+                    <div className="flex w-[10%] flex-wrap justify-between gap-5">
+                      <Text as="p">24</Text>
+                      <Text as="p">32</Text>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute bottom-[7%] left-0 right-0 m-auto h-[548px] w-[97%] md:h-auto">
+                  <div className="absolute left-0 right-0 top-[0.00px] m-auto flex w-full rounded border border-solid border-blue_gray-100 bg-gray-50">
+                    <div className="ml-[119px] flex w-[76%] items-start justify-between gap-5 md:ml-0 md:w-full md:p-5 sm:flex-col">
+                      <div className="flex w-[39%] items-start justify-between gap-5 sm:w-full">
+                        <div className="mt-5 flex flex-col items-center">
+                          <Text as="p" className="!text-blue_gray-900">
+                            Loan EMI
+                          </Text>
+                          <Text
+                            size="4xl"
+                            as="p"
+                            className="mt-[15px] !text-blue_gray-900"
+                          >
+                            ₹ 500000
+                          </Text>
+                          <Text as="p" className="mt-16 !text-blue_gray-900">
+                            Total Interest Payable
+                          </Text>
+                          <Text
+                            size="4xl"
+                            as="p"
+                            className="mt-2.5 !text-blue_gray-900"
+                          >
+                            ₹ 500000
+                          </Text>
+                          <Text
+                            as="p"
+                            className="mt-[63px] text-center !text-blue_gray-900"
+                          >
+                            <>
+                              Total Payment
+                              <br />
+                              (Principal + Interest)
+                            </>
+                          </Text>
+                          <Text
+                            size="4xl"
+                            as="p"
+                            className="mt-[9px] !text-blue_gray-900"
+                          >
+                            ₹ 50,16,157
+                          </Text>
+                        </div>
+                        <div className="h-full w-px bg-blue_gray-100" />
+                      </div>
+                      <Text as="p" className="mt-[22px] !text-blue_gray-900">
+                        Break-up of Total Payment
+                      </Text>
+                    </div>
+                  </div>
+                  <CircularProgressbar
+                    strokeWidth={21}
+                    value={33}
+                    counterClockwise
+                    styles={{
+                      trail: { stroke: "#0f528b" },
+                      path: { strokeLinecap: "square" },
+                    }}
+                    className="mr-[153px] h-[433px] w-[37%] md:mr-0"
+                  />
+                  <div className="absolute bottom-[15%] right-[13%] m-auto flex w-[37%] border border-solid border-blue_gray-100 bg-white-A700 p-3">
+                    <div className="ml-[9px] mt-2 flex w-[60%] flex-col gap-2.5 md:ml-0 md:w-full">
+                      <div className="flex items-start gap-[18px]">
+                        <div className="h-[20px] w-[20px] rounded-[10px] bg-blue-600" />
+                        <Text as="p" className="!text-blue_gray-900">
+                          Principal Loan Amount
+                        </Text>
+                      </div>
+                      <div className="flex w-[65%] items-center gap-[18px] md:w-full">
+                        <div className="h-[20px] w-[20px] rounded-[10px] bg-light_blue-900" />
+                        <Text as="p" className="!text-blue_gray-900">
+                          Total Interest
+                        </Text>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute left-0 right-0 top-[14%] m-auto flex h-[97px] flex-col items-end bg-[url(/public/images/img_group_39.svg)] bg-cover bg-no-repeat p-[25px] md:h-auto sm:p-5">
+                    <Text as="p" className="rotate-[50deg] !text-blue-600">
+                      65%
+                    </Text>
+                  </div>
+                  <div className="absolute right-[6%] top-[19%] m-auto flex h-[120px] w-[11%] items-center justify-center bg-[url(/public/images/img_group_38.svg)] bg-cover bg-no-repeat p-[34px] md:h-auto sm:p-5">
+                    <Text
+                      as="p"
+                      className="rotate-[-61deg] self-end !text-blue-600"
+                    >
+                      45%
+                    </Text>
+                  </div>
+                </div>
+                <Button
+                  shape="round"
+                  className="absolute bottom-[4%] left-0 right-0 m-auto min-w-[177px] font-lato font-medium sm:px-5"
+                >
+                  Get Loan
+                </Button>
+              </div>
+            </div>
