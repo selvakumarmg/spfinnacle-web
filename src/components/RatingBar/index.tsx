@@ -3,7 +3,10 @@ import React, { HTMLAttributes } from "react";
 
 import ReactStars from "react-rating-stars-component";
 
-type RatingBarType = React.DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> &
+type RatingBarType = React.DetailedHTMLProps<
+  HTMLAttributes<HTMLDivElement>,
+  HTMLDivElement
+> &
   Partial<{
     starCount: number;
     color: string;
@@ -17,7 +20,7 @@ const RatingBar = ({
   className,
   starCount = 5,
   color = "grey",
-  activeColor = "red",
+  activeColor = "#FABC06",
   isEditable = false,
   ...restProps
 }: RatingBarType) => {

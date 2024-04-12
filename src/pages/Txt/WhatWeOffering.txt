@@ -1,0 +1,23 @@
+<div className="absolute bottom-0 left-[6%] top-0 my-auto h-[152px] w-[48%]">
+              <div className="absolute left-[0.00px] top-[0.00px] m-auto h-[144px] w-[64%] md:h-auto">
+                <Text
+                  size="5xl"
+                  as="p"
+                  className="bg-gradient bg-clip-text uppercase !text-transparent"
+                >
+                  Services
+                </Text>
+                <Heading
+                  as="h4"
+                  className="absolute bottom-[24%] left-[4.35px] m-auto text-center !text-pink-A400"
+                >
+                  What We’re Offering
+                </Heading>
+              </div>
+              <Heading
+                as="h4"
+                className="absolute bottom-[-0.53px] left-0 right-0 m-auto w-max !text-gray-700_01"
+              >
+                Select from a diverse array of financial options available
+              </Heading>
+            </div>

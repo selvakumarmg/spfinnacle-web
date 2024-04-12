@@ -1,6 +1,9 @@
 import React from "react";
 
-type ImgProps = React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement> &
+type ImgProps = React.DetailedHTMLProps<
+  React.ImgHTMLAttributes<HTMLImageElement>,
+  HTMLImageElement
+> &
   Partial<{
     className: string;
     src: string;
@@ -13,6 +16,14 @@ const Img: React.FC<React.PropsWithChildren<ImgProps>> = ({
   alt = "testImg",
   ...restProps
 }) => {
-  return <img className={className} src={src} alt={alt} {...restProps} loading={"lazy"} />;
+  return (
+    <img
+      className={className}
+      src={src}
+      alt={alt}
+      {...restProps}
+      loading={"lazy"}
+    />
+  );
 };
 export { Img };
