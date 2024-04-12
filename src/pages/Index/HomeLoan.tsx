@@ -9,7 +9,7 @@ export default function HommeLoan() {
         alt="untitleddesign"
         className=" m-auto h-[300px] w-full object-cover"
       />
-      <div className="absolute left-0 right-0 top-0 m-auto flex h-[300px] w-full flex-col items-start justify-end p-[31px] bg-gradient1 sm:p-5">
+      <div className="absolute left-0 right-0 top-0 m-auto flex h-[300px] w-full flex-col items-start justify-end p-[31px] bg-gradient1 sm:p-5 hover:cursor-pointer">
         <Heading as="h4" className="mb-[18px] mt-[300px] !font-montserrat">
           Home Loan
         </Heading>
