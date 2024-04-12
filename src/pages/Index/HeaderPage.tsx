@@ -5,7 +5,10 @@ import Menu from "./Menu";
 export default function HeaderPage() {
   return (
     <>
-      <div className="w-[80%] md:w-[90%] mx-auto flex items-center justify-between text-white ">
+      <div
+        className="w-[80%] md:w-[90%] mx-auto flex items-center justify-between text-white "
+        id="home-page"
+      >
         <Logo />
         <Menu />
       </div>
