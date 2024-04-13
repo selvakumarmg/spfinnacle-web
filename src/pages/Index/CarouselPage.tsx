@@ -53,7 +53,7 @@ export default function CarouselPage() {
                         </div>
                         <Button
                           size="xl"
-                          className="absolute bottom-[23%] left-[0.00px] m-auto min-w-[206px] rounded-lg font-medium sm:px-5"
+                          className="absolute bottom-[23%] left-[0.00px] m-auto min-w-[206px] rounded-lg font-medium sm:px-5 hover:bg-[hsl(340,89%,58%)]"
                         >
                           Get Loan
                         </Button>
