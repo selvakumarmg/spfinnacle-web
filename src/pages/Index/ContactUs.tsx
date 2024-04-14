@@ -1,10 +1,20 @@
 import { Button, Heading, Text } from "components";
-import React from "react";
+import React, { useState } from "react";
+import LoanForm from "./LoanForm";
 
 export default function ContactUs() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openDialog = () => {
+    setIsOpen(true);
+  };
+
+  const closeDialog = () => {
+    setIsOpen(false);
+  };
   return (
     <div
-      className="relative w-full h-[75%] flex items-center"
+      className="relative w-full h-screen flex items-center"
       id="contact-us-page"
     >
       <div className="m-auto flex w-[63%] flex-col items-center gap-9">
@@ -31,11 +41,27 @@ export default function ContactUs() {
           <Button
             shape="round"
             className="min-w-[177px] font-lato font-medium sm:px-5"
+            onClick={openDialog}
           >
             Get Loan
           </Button>
+          {isOpen && (
+            <div className="absolute top-14 left-16">
+              <LoanForm />
+              <button
+                type="button"
+                onClick={closeDialog}
+                className="absolute text-2xl text-[#E80D55] top-3 right-[11%]"
+              >
+                X
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>
   );
+}
+function openDialog() {
+  throw new Error("Function not implemented.");
 }

@@ -3,8 +3,8 @@ import React from "react";
 
 export default function WhatWeOffering() {
   return (
-    <div className="absolute w-full left-20  flex items-center top-10 m-0">
-      <div className=" flex justify-center flex-col">
+    <div className="w-full ml-20 mt-10 flex items-center">
+      <div className="flex justify-center flex-col">
         <Heading as="h4" className="flex-1 !text-pink-A400 absolute top-0">
           What We’re Offering
         </Heading>
