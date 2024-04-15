@@ -7,7 +7,7 @@ export default function Menu() {
       <ul className="flex md:gap-[1vw] gap-[4vw] sm:hidden flex-1">
         <li>
           <a
-            href="#home-page"
+            href="/#home-page"
             className="cursor-pointer text-base font-medium text-[hsl(0,0%,0%)]"
           >
             <Text size="lg" as="p">
@@ -17,7 +17,7 @@ export default function Menu() {
         </li>
         <li>
           <a
-            href="#services-page"
+            href="/#services-page"
             className="cursor-pointer text-base font-medium text-[hsl(0,0%,0%)]"
           >
             <Text size="lg" as="p">
@@ -41,7 +41,7 @@ export default function Menu() {
             className="cursor-pointer text-base font-medium text-[hsl(0,0%,0%)]"
           >
             <Text size="lg" as="p">
-              Blogs
+              Product
             </Text>
           </a>
         </li>
@@ -51,7 +51,7 @@ export default function Menu() {
             className="cursor-pointer text-base font-medium text-[hsl(0,0%,0%)]"
           >
             <Text size="lg" as="p">
-              Conatct Us
+              Career
             </Text>
           </a>
         </li>
