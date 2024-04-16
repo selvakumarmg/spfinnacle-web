@@ -38,7 +38,7 @@ export default function Careers() {
         {/* Career 2 */}
         <div className="w-[500px] h-[230px] border-2 border-[#E80D55] rounded-md flex flex-col gap-y-4 justify-center p-8">
           <Text as="h2" className="text-[#E80D55] !font-semibold !text-xl">
-            Voice Processing
+            Non Voice Processing
           </Text>
           <Text as="p" className="!text-lg !font-normal text-[#353535]">
             Lorem ipsum dolor sit amet. Et accusamus necessitatibus eos ducimus
@@ -57,7 +57,7 @@ export default function Careers() {
         {/* Career 3 */}
         <div className="w-[500px] h-[230px] border-2 border-[#E80D55] rounded-md flex flex-col gap-y-4 justify-center p-8">
           <Text as="h2" className="text-[#E80D55] !font-semibold !text-xl">
-            Voice Processing
+            Analyst
           </Text>
           <Text as="p" className="!text-lg !font-normal text-[#353535]">
             Lorem ipsum dolor sit amet. Et accusamus necessitatibus eos ducimus
@@ -76,7 +76,7 @@ export default function Careers() {
         {/* Career 4 */}
         <div className="w-[500px] h-[230px] border-2 border-[#E80D55] rounded-md flex flex-col gap-y-4 justify-center p-8">
           <Text as="h2" className="text-[#E80D55] !font-semibold !text-xl">
-            Voice Processing
+            Customer Management
           </Text>
           <Text as="p" className="!text-lg !font-normal text-[#353535]">
             Lorem ipsum dolor sit amet. Et accusamus necessitatibus eos ducimus
@@ -95,6 +95,13 @@ export default function Careers() {
         {isOpen && (
           <div className="absolute w-full h-fit top-[-25%]">
             <ResumeUpload />
+            <button
+              type="button"
+              onClick={closeDialog}
+              className="absolute text-2xl text-[#E80D55] top-4 right-[28%]"
+            >
+              X
+            </button>
           </div>
         )}
       </div>
