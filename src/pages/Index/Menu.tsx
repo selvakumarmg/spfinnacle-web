@@ -17,16 +17,6 @@ export default function Menu() {
         </li>
         <li>
           <a
-            href="#services-page"
-            className="cursor-pointer text-base font-medium text-[hsl(0,0%,0%)]"
-          >
-            <Text size="lg" as="p">
-              Services
-            </Text>
-          </a>
-        </li>
-        <li>
-          <a
             href="#welcome-page"
             className="cursor-pointer text-base font-medium text-[hsl(0,0%,0%)]"
           >
@@ -37,7 +27,17 @@ export default function Menu() {
         </li>
         <li>
           <a
-            href="#contact-us-page"
+            href="#services-page"
+            className="cursor-pointer text-base font-medium text-[hsl(0,0%,0%)]"
+          >
+            <Text size="lg" as="p">
+              Services
+            </Text>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#product-page"
             className="cursor-pointer text-base font-medium text-[hsl(0,0%,0%)]"
           >
             <Text size="lg" as="p">

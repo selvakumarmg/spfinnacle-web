@@ -4,10 +4,10 @@ import { Helmet } from "react-helmet";
 import AboutPage from "./Index/AboutPage";
 import CareerPage from "./Index/CareerPage";
 import CarouselPage from "./Index/CarouselPage";
-import ContactUs from "./Index/ContactUs";
 import Footer from "./Index/Footer";
 import HeaderPage from "./Index/HeaderPage";
 import MeetOurTeam from "./Index/MeetOurTeam";
+import ProductPage from "./Index/ProductPage";
 import ScrollToTopButton from "./Index/ScrollToTheTop";
 import Services from "./Index/Services";
 import Testimonial from "./Index/Testimonial";
@@ -31,9 +31,10 @@ export default function Home() {
       <AboutPage />
       <TrustedBanksHC />
       <Services />
+      <ProductPage />
       <Testimonial />
       <MeetOurTeam />
-      <ContactUs />
+      {/* <ContactUs /> */}
       <Footer />
       <CareerPage />
     </>
