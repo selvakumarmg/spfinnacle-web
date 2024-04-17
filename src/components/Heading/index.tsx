@@ -15,7 +15,10 @@ export type HeadingProps = Partial<{
   as: any;
   size: keyof typeof sizes;
 }> &
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>;
+  React.DetailedHTMLProps<
+    React.HTMLAttributes<HTMLSpanElement>,
+    HTMLSpanElement
+  >;
 
 const Heading: React.FC<React.PropsWithChildren<HeadingProps>> = ({
   children,
@@ -27,7 +30,10 @@ const Heading: React.FC<React.PropsWithChildren<HeadingProps>> = ({
   const Component = as || "h6";
 
   return (
-    <Component className={`text-white-A700 font-poppins ${className} ${sizes[size]}`} {...restProps}>
+    <Component
+      className={`text-white-A700 font-poppins ${className} ${sizes[size]}`}
+      {...restProps}
+    >
       {children}
     </Component>
   );

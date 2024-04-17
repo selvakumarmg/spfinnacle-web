@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/**/*.{js,ts,jsx,tsx,html,mdx}", "./src/**/*.{js,ts,jsx,tsx,html,mdx}"],
   darkMode: "class",
   theme: {
-    screens: { md: { max: "1050px" }, sm: { max: "550px" }, 'lg': { 'min': '1050px', 'max': '1279px' }, },
+    screens: { 'md': { 'min': '551px', 'max': '1049px' }, sm: { max: "550px" }, 'lg': { 'min': '1050px', 'max': '1279px' }, 'xl': { 'min': '1280px', 'max': '1536px' } },
     extend: {
       colors: {
         white: { A700: "#ffffff", A700_3f: "#ffffff3f", A700_cc: "#ffffffcc", A700_30: "#ffffff30" },

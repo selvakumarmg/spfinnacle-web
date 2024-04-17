@@ -4,8 +4,8 @@ import "react-circular-progressbar/dist/styles.css";
 import { Helmet } from "react-helmet";
 import AboutPage from "./Index/AboutPage";
 import CareerPage from "./Index/CareerPage";
-import CarouselPage from "./Index/CarouselPage";
 import Footer from "./Index/Footer";
+import ImageCarousel from "./Index/ImageCarousel";
 import MeetOurTeam from "./Index/MeetOurTeam";
 import Navbar from "./Index/Navbar";
 import ProductPage from "./Index/ProductPage";
@@ -29,7 +29,8 @@ export default function Home() {
         </Helmet>
         <ScrollToTopButton />
         <Navbar logo={<CompanyLogo />} menuItems={menuItems} />
-        <CarouselPage />
+        {/* <CarouselPage /> */}
+        <ImageCarousel />
         <WelcomePage />
         <AboutPage />
         <TrustedBanksHC />

@@ -1,20 +1,19 @@
-import { Img, Text } from "components";
 import React from "react";
 
 export default function HappyCustomers() {
   return (
-    <div className="flex w-[28%] h-[30%] justify-center flex-col items-start gap-1 rounded-[10px] bg-pink-A400_0f p-9 md:w-full md:p-5">
-      <Img
+    <div className="flex w-[28%] h-[30%] justify-center flex-col items-start gap-1 rounded-[10px] bg-pink-A400_0f p-9 md:w-[75%] md:mx-auto md:justify-center md:items-center sm:w-[80%] sm:h-[50%] sm:p-2 sm:items-center sm:justify-center">
+      <img
         src="images/img_sentiment_satis.png"
         alt="sentimentsatis"
-        className="ml-[47px] mt-3 h-[66px] w-[65px] object-cover md:ml-0"
+        className="ml-[47px] sm:ml-0 mt-3 sm:mt-0 h-[66px] w-[65px] object-cover md:ml-0"
       />
-      <Text size="3xl" as="p" className="ml-[47px] !text-pink-A400 md:ml-0">
+      <p className="ml-[47px] sm:ml-0 text-[#E80D55] text-2xl sm:text-lg font-medium md:ml-0">
         100000+
-      </Text>
-      <Text size="3xl" as="p" className="ml-[47px] !text-gray-700_01 md:ml-0">
+      </p>
+      <p className="ml-[47px] sm:ml-0 text-[#555555] text-2xl sm:text-lg font-medium md:ml-0">
         Happy Customers
-      </Text>
+      </p>
     </div>
   );
 }

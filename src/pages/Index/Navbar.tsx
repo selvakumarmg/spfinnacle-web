@@ -40,7 +40,7 @@ const Navbar: React.FC<NavbarProps> = ({ logo, menuItems }) => {
   };
 
   return (
-    <nav className="bg-white-A700 p-4">
+    <nav className="bg-white-A700 p-4 ">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div>
           <a href="#home">{logo}</a>
