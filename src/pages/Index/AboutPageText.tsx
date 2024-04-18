@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutPageText() {
   return (
-    <div className="relative m-auto flex w-[50%] md:w-[80%] sm:w-[80%] flex-col items-start">
+    <div className="relative m-auto flex w-[40%] md:w-[80%] sm:w-[80%] flex-col items-start">
       <h4 className="text-center text-2xl sm:text-lg font-semibold text-pink-A400">
         About Company
       </h4>

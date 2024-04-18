@@ -4,8 +4,8 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="relative w-full h-screen">
-      <footer className="absolute bottom-[0.50px] left-0 right-0 m-auto flex w-full items-center justify-center bg-gray-900 p-[26px] sm:p-5">
+    <div className="relative w-full h-screen sm:bottom-0 sm:h-max sm:top-20">
+      <footer className="absolute bottom-[0.50px] left-0 right-0 m-auto flex w-full items-center justify-center bg-gray-900 p-[26px] sm:p-5 sm:relative">
         <div className="mt-[30px] flex w-[78%] flex-col justify-center gap-20 md:w-full md:gap-[60px] sm:gap-10">
           <div className="mx-auto flex w-full max-w-[1078px] items-start justify-between gap-5 md:p-5 sm:flex-col">
             <div className="flex flex-col items-start gap-[15px]">
@@ -246,46 +246,43 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-          <div className="flex flex-col gap-[25px]">
-            <div className="mx-auto h-px w-full max-w-[1074px] bg-light_blue-900_19 md:p-5" />
-            <div className="flex items-end md:flex-col">
-              {/* <Img
-                src="images/img_img_20240326_wa.png"
-                alt="img20240326wa"
-                className="h-[76px] w-[29%] object-cover md:w-full"
-              /> */}
+          <div className="flex flex-col gap-[25px] sm:gap-0">
+            <div className="mx-auto h-px w-full max-w-[1074px] bg-light_blue-900_19" />
+            <div className="flex items-end md:flex-col sm:flex-col">
               <CompanyLogo />
               <Text
                 size="s"
                 as="p"
-                className="mb-6 ml-[272px] text-center !font-lato !text-white-A700 md:ml-0"
+                className="mb-6 ml-[272px] text-center !font-lato !text-white-A700 md:ml-0 sm:ml-0"
               >
                 © 2024 SP Finnacle. All Rights Reserved.{" "}
               </Text>
-              <Button
-                color="white_A700_3f"
-                size="sm"
-                variant="outline"
-                className="mb-3.5 ml-[266px] w-[39px] rounded-[19px] md:ml-0"
-              >
-                <Img src="images/img_facebook.svg" />
-              </Button>
-              <Button
-                color="white_A700_3f"
-                size="sm"
-                variant="outline"
-                className="mb-3.5 ml-3.5 w-[39px] rounded-[19px] md:ml-0"
-              >
-                <Img src="images/img_link.svg" />
-              </Button>
-              <Button
-                color="white_A700_3f"
-                size="sm"
-                variant="outline"
-                className="mb-3.5 ml-3.5 w-[39px] rounded-[19px] md:ml-0"
-              >
-                <Img src="images/img_trash.svg" />
-              </Button>
+              <div className="flex gap-3">
+                <Button
+                  color="white_A700_3f"
+                  size="sm"
+                  variant="outline"
+                  className="mb-3.5 ml-[266px] w-[39px] rounded-[19px] md:ml-0"
+                >
+                  <Img src="images/img_facebook.svg" />
+                </Button>
+                <Button
+                  color="white_A700_3f"
+                  size="sm"
+                  variant="outline"
+                  className="mb-3.5 ml-3.5 w-[39px] rounded-[19px] md:ml-0"
+                >
+                  <Img src="images/img_link.svg" />
+                </Button>
+                <Button
+                  color="white_A700_3f"
+                  size="sm"
+                  variant="outline"
+                  className="mb-3.5 ml-3.5 w-[39px] rounded-[19px] md:ml-0"
+                >
+                  <Img src="images/img_trash.svg" />
+                </Button>
+              </div>
             </div>
           </div>
         </div>

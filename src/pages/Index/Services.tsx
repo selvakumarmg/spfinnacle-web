@@ -5,7 +5,10 @@ import WhatWeOffering from "./WhatWeOffereing";
 
 export default function Services() {
   return (
-    <div className="relative w-full h-screen md:h-max" id="services-page">
+    <div
+      className="relative w-full h-screen md:h-[500px] sm:h-[480px] md:top-10 sm:top-5"
+      id="services-page"
+    >
       <WhatWeOffering />
       <ServicesOffered />
       <ServicesKnowMoreButton />
