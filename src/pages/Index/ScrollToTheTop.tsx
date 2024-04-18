@@ -34,21 +34,17 @@ const ScrollToTopButton: React.FC = () => {
     <div>
       {isVisible && (
         <button
-          title="scroll-to-the-top"
-          className="fixed bottom-4 right-4 bg-[#E80D55] text-white p-3 rounded-full shadow-md z-0"
+          className="fixed bottom-4 right-4 bg-[#E80D55] text-white p-3 rounded-lg drop-shadow shadow-[#000000]/100 z-0 opacity-50  hover:opacity-100 hover:shadow-inner hover:shadow-[#E5E5E5]"
           onClick={scrollToTop}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 320 512"
-            width="40"
-            height="40"
-            className="w-10 h-10"
-          >
+          <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8">
             <path
-              fill="#FFFFFF"
-              d="M318 177.5c3.8-8.8 2-19-4.6-26l-136-144C172.9 2.7 166.6 0 160 0s-12.9 2.7-17.4 7.5l-136 144c-6.6 7-8.4 17.2-4.6 26S14.4 192 24 192H96l0 288c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32l0-288h72c9.6 0 18.2-5.7 22-14.5z"
-            />
+              d="M7 11L12 6L17 11M12 18V7"
+              stroke="#FFFFFF"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
           </svg>
         </button>
       )}

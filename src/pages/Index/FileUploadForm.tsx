@@ -4,7 +4,6 @@ import React, { useState } from "react";
 
 const { Dragger } = Upload;
 const MAX_FILE_SIZE_MB = 2; // Maximum file size allowed in MB
-const MIN_FILE_SIZE_MB = 1; // Maximum file size allowed in MB
 
 const FileUploadForm: React.FC = () => {
   const [uploadedFile, setUploadedFile] = useState<string | null>(null);
@@ -39,16 +38,11 @@ const FileUploadForm: React.FC = () => {
       const fileSizeMB = file.size / 1024 / 1024; // Convert bytes to MB
       if (fileSizeMB > MAX_FILE_SIZE_MB) {
         message.error(
-          `File size exceeds the maximum limit of ${MAX_FILE_SIZE_MB} MB.`
+          `File size exceeds the maximum limit of ${MAX_FILE_SIZE_MB} MB.`,
         );
         return false; // Prevent upload
       }
-      if (fileSizeMB < MIN_FILE_SIZE_MB) {
-        message.error(
-          `File size should be a minimum limit of ${MIN_FILE_SIZE_MB} MB.`
-        );
-        return false; // Prevent upload
-      }
+
       // Clear the uploaded file state before uploading a new file
       setUploadedFile(null);
       setFileList([file]);
@@ -58,7 +52,7 @@ const FileUploadForm: React.FC = () => {
       const files = e.dataTransfer.files;
       if (files.length > 1) {
         message.warning(
-          "Multiple files dropped. Only one file can be uploaded at a time."
+          "Multiple files dropped. Only one file can be uploaded at a time.",
         );
         setFileList([]); // Clear the file list to prevent upload
         return;
@@ -67,7 +61,7 @@ const FileUploadForm: React.FC = () => {
       const unsupportedFiles = Array.from(files).filter((file) => {
         const fileExtension = file.name.split(".").pop();
         return ![".jpeg", ".jpg", ".doc", ".docx", ".pdf"].includes(
-          `.${fileExtension}`
+          `.${fileExtension}`,
         );
       });
       if (unsupportedFiles.length > 0) {
@@ -82,9 +76,9 @@ const FileUploadForm: React.FC = () => {
         Click or drag file to this area to upload
       </p>
       <p className="ant-upload-hint">
-        *.jpg, *.jpeg, *.pdf, *.doc, *.docx files only accepted (File Size
-        should be 1 - 2MB)
+        *.jpg, *.jpeg, *.pdf, *.doc, *.docx files only accepted
       </p>
+      <p className="ant-upload-hint">(File Size should not exceed 2MB)</p>
     </Dragger>
   );
 };

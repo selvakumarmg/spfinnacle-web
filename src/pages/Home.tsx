@@ -38,8 +38,8 @@ export default function Home() {
         <ProductPage />
         <Testimonial />
         <MeetOurTeam />
-        <Footer />
         <CareerPage />
+        <Footer />
         <ScrollToTopButton />
       </div>
     </>

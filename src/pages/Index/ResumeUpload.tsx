@@ -5,7 +5,7 @@ import React, { ChangeEvent, useState } from "react";
 export default function ResumeUpload() {
   const [file, setFile] = useState<File | null>(null);
   const [fileName, setFileName] = useState<string>(
-    "Click to browse your files"
+    "Click to browse your files",
   );
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -28,20 +28,6 @@ export default function ResumeUpload() {
           <div className="w-full h-[80%] flex justify-center items-center bg-[#F7F9FB] rounded-b-3xl">
             {/* Contains the Label And Inout Field */}
             <div className="flex justify-center items-center w-[80%] h-[80%] border-4 border-dashed rounded-3xl border-[#E2E6EA]">
-              {/* <label
-                htmlFor="resumeUpload"
-                className="flex justify-center items-center text-[#8e9098] w-full h-full text-center hover:cursor-pointer bg-transparent"
-              >
-                {fileName}
-              </label>
-              <input
-                type="file"
-                placeholder="Click to browse or drag and drop your files"
-                id="resumeUpload"
-                name="resumeUpload"
-                className="text-[#8e9098] w-full h-full text-center hover:cursor-pointer bg-transparent focus:outline-none hidden"
-                onChange={handleFileChange}
-              /> */}
               <FileUploadForm />
             </div>
           </div>
