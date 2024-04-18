@@ -27,7 +27,7 @@ export default function Home() {
             content="Web site created using create-react-app"
           />
         </Helmet>
-        <ScrollToTopButton />
+
         <Navbar logo={<CompanyLogo />} menuItems={menuItems} />
         {/* <CarouselPage /> */}
         <ImageCarousel />
@@ -40,6 +40,7 @@ export default function Home() {
         <MeetOurTeam />
         <Footer />
         <CareerPage />
+        <ScrollToTopButton />
       </div>
     </>
   );
