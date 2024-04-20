@@ -1,44 +1,34 @@
-import { Text } from "components";
-import FileUploadForm from "pages/Index/FileUploadForm";
-import React, { ChangeEvent, useState } from "react";
+import { CareerButton } from "components/Button/CareerButton";
+import React, { useState } from "react";
+import FileUploadForm from "./FileUploadForm";
 
-export default function ResumeUpload() {
-  const [file, setFile] = useState<File | null>(null);
-  const [fileName, setFileName] = useState<string>(
-    "Click to browse your files",
-  );
+interface ResumeUploadProps {
+  onSubmit: () => void;
+}
+const ResumeUpload: React.FC<ResumeUploadProps> = ({ onSubmit }) => {
+  const [uploadedFile, setUploadedFile] = useState<File | null>(null);
 
-  const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
-    console.log(event);
-    if (event.target.files && event.target.files.length > 0) {
-      const uploadedFile = event.target.files[0];
-      console.log(uploadedFile);
-      setFile(uploadedFile);
-      setFileName(uploadedFile.name);
-    }
+  const handleFileUpload = (file: File) => {
+    setUploadedFile(file);
   };
+
   return (
-    <>
-      <div className="w-[50%] h-[600px] bg-[#FFFFFF] mx-auto rounded-sm drop-shadow-2xl flex flex-col justify-center items-center gap-y-16">
-        <div className="w-[60%] h-[70%] rounded-3xl flex flex-col justify-between items-center border-2 border-[#868181]">
-          <Text as="h2" className="!font-medium !text-xl text-[#E80D55] mt-8">
-            Upload Your Resume
-          </Text>
-          {/* Division with gray background containing the div for input field */}
-          <div className="w-full h-[80%] flex justify-center items-center bg-[#F7F9FB] rounded-b-3xl">
-            {/* Contains the Label And Inout Field */}
-            <div className="flex justify-center items-center w-[80%] h-[80%] border-4 border-dashed rounded-3xl border-[#E2E6EA]">
-              <FileUploadForm />
-            </div>
+    <div className="w-[50%] h-[500px] bg-[#FFFFFF] mx-auto rounded-sm drop-shadow-2xl flex flex-col justify-center items-center gap-y-16 xl:w-[60%] xl:gap-y-8 md:w-[80%] md:h-[450px] sm:w-full sm:h-[350px] sm:gap-y-3">
+      <div className="w-[60%] h-[70%] rounded-3xl flex flex-col justify-between items-center border-2 border-[#868181] sm:w-[75%]">
+        <h2 className="font-medium text-xl text-[#E80D55] mt-8 sm:text-base sm:mt-4">
+          Upload Your Resume
+        </h2>
+        <div className="w-full h-[80%] flex justify-center items-center bg-[#F7F9FB] rounded-b-3xl">
+          <div className="flex justify-center items-center w-[80%] h-[80%] border-4 border-dashed rounded-3xl border-[#E2E6EA] sm:w-full sm:h-full">
+            <FileUploadForm />
           </div>
         </div>
-        <button
-          type="button"
-          className="bg-[#E80D55] w-44 h-14 rounded-md text-[#FFFFFF] font-medium text-[22px] hover:bg-[hsl(340,89%,58%)]"
-        >
-          Submit
-        </button>
       </div>
-    </>
+      <CareerButton type="button" onClick={onSubmit}>
+        Submit
+      </CareerButton>
+    </div>
   );
-}
+};
+
+export default ResumeUpload;

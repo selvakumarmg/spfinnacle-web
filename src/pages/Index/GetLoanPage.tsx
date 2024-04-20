@@ -1,10 +1,18 @@
 import { Button, Input } from "components";
-import React from "react";
+import { loanTypes } from "pages/constants/getloanconst";
+import React, { useState } from "react";
 
 export default function GetLoanPage() {
+  // State to manage the selected loan type
+  const [loanTypeSelected, setLoanTypeSelected] = useState();
+
+  // Function to handle change in selected loan type
+  const handleLoanTypeChange = (event) => {
+    setLoanTypeSelected(event.target.value);
+  };
   return (
     <>
-      <div className="grid gap-x-4 gap-y-5 grid-cols-2 sm:grid-cols-1">
+      <div className="grid gap-x-4 gap-y-5 grid-cols-2 sm:grid-cols-1 md:grid-cols-3 md:gap-y-2 sm:gap-y-1">
         <div>
           <label htmlFor="name">Name</label>
           <Input
@@ -59,22 +67,40 @@ export default function GetLoanPage() {
             className="h-10 !p-5 my-3 !bg-[#FCF1F4] !rounded-sm text-[#000000]"
           />
         </div>
-        <div>
+        <div className="flex flex-col">
           <label htmlFor="type-of-loan">Type Of Loan</label>
-          <Input
+          {/* <Input
             type="text"
             id="type-of-loan"
             placeholder="Type of Loan"
             className="h-10 !p-5 my-3  !bg-[#FCF1F4] !rounded-sm text-[#000000]"
-          />
+          /> */}
+          <select
+            name="type-of-loan"
+            id="type-of-loan"
+            value={loanTypeSelected}
+            onChange={handleLoanTypeChange}
+            className="h-15 my-3 p-3 bg-[#FCF1F4] md:w-[250px] rounded-sm text-[#000000]"
+          >
+            <option disabled defaultValue={"Select Loan Type"}>
+              Select Loan Type
+            </option>
+            {loanTypes.map((option, index) => (
+              <option key={index} value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
         </div>
       </div>
-      <Button
-        shape="round"
-        className="mt-[20px] ml-40 min-w-[300px] font-lato font-medium sm:px-5 hover:bg-[hsl(340,89%,58%)]"
-      >
-        Submit
-      </Button>
+      <div className="w-full">
+        <Button
+          shape="round"
+          className="mt-[20px] mx-auto min-w-[300px] font-lato font-medium sm:px-5  sm:min-w-[150px] hover:bg-[hsl(340,89%,58%)]"
+        >
+          Submit
+        </Button>
+      </div>
     </>
   );
 }

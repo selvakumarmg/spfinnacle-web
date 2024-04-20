@@ -18,7 +18,7 @@ const ImageCarousel = () => {
     return () => clearInterval(interval);
   }, [slides.length]); // useEffect dependency on slides length
   return (
-    <div className="max-w-full md:w-full md:h-[350px] sm:h-[300px] h-[550px] bg-no-repeat w-full m-auto relative group">
+    <div className="max-w-full md:w-full h-[85vh] bg-no-repeat w-full m-auto relative group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="relative w-full h-full bg-center bg-slate-500 self-stretch bg-cover duration-500"

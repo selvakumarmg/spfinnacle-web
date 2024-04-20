@@ -40,8 +40,8 @@ const Navbar: React.FC<NavbarProps> = ({ logo, menuItems }) => {
   };
 
   return (
-    <nav className="bg-white-A700 p-4 ">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+    <nav className="bg-white-A700" id="home">
+      <div className="max-w-[90%] mx-auto flex justify-between items-center h-[12vh] ">
         <div>
           <a href="#home">{logo}</a>
         </div>
@@ -68,8 +68,8 @@ const Navbar: React.FC<NavbarProps> = ({ logo, menuItems }) => {
             </button>
           </div>
         ) : (
-          <div className="md:block">
-            <ul className="flex space-x-10">
+          <div className=" pr-10 md:pr-0 flex justify-center items-center gap-x-5 md:flex">
+            <ul className="flex space-x-10 md:space-x-5">
               {menuItems.map((item, index) => (
                 <li key={index}>
                   <button
@@ -81,12 +81,18 @@ const Navbar: React.FC<NavbarProps> = ({ logo, menuItems }) => {
                 </li>
               ))}
             </ul>
+            <button
+              type="button"
+              className="w-20 rounded-lg md:rounded-md h-8 border-2 border-[#E80D55] hover:bg-[#E80D55] text-[#E80D55] hover:text-[#FFFFFF] hover:border-[#FFFFFF] text-sm md:text-[10px] font-medium md:w-14 md:h-5 sm:text-sm sm:w-14 sm:h-5"
+            >
+              Get Loan
+            </button>
           </div>
         )}
       </div>
       {/* Mobile Menu */}
       {isOpen && isMobile && (
-        <div className=" mt-2">
+        <div className=" mt-2 p">
           <ul className="flex flex-col space-y-2">
             {menuItems.map((item, index) => (
               <li key={index}>
@@ -99,6 +105,12 @@ const Navbar: React.FC<NavbarProps> = ({ logo, menuItems }) => {
               </li>
             ))}
           </ul>
+          <button
+            type="button"
+            className="w-full h-10 border-2 border-[#E80D55] hover:bg-[#E80D55] text-[#E80D55] hover:text-[#FFFFFF] hover:border-[#FFFFFF] text-base font-medium mx-auto"
+          >
+            Get Loan
+          </button>
         </div>
       )}
     </nav>
