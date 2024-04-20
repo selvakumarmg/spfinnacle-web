@@ -83,7 +83,7 @@ const Navbar: React.FC<NavbarProps> = ({ logo, menuItems }) => {
             </ul>
             <button
               type="button"
-              className="w-20 rounded-lg md:rounded-md h-8 bg-[#E80D55] hover:bg-[hsl(340,89%,58%)] text-[#FFFFFF] text-sm md:text-[10px] font-medium md:w-14 md:h-5 sm:text-sm sm:w-14 sm:h-5"
+              className="w-20 rounded-lg md:rounded-md h-8 border-2 border-[#E80D55] hover:bg-[#E80D55] text-[#E80D55] hover:text-[#FFFFFF] hover:border-[#FFFFFF] text-sm md:text-[10px] font-medium md:w-14 md:h-5 sm:text-sm sm:w-14 sm:h-5"
             >
               Get Loan
             </button>
@@ -107,7 +107,7 @@ const Navbar: React.FC<NavbarProps> = ({ logo, menuItems }) => {
           </ul>
           <button
             type="button"
-            className="w-full h-10 bg-[#E80D55] hover:bg-[hsl(340,89%,58%)] text-[#FFFFFF] text-base font-medium mx-auto"
+            className="w-full h-10 border-2 border-[#E80D55] hover:bg-[#E80D55] text-[#E80D55] hover:text-[#FFFFFF] hover:border-[#FFFFFF] text-base font-medium mx-auto"
           >
             Get Loan
           </button>
