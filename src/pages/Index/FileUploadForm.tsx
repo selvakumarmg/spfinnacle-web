@@ -72,13 +72,15 @@ const FileUploadForm: React.FC = () => {
 
   return (
     <Dragger {...props} className="w-full h-full">
-      <p className="ant-upload-text">
+      <p className="ant-upload-text sm:text-base">
         Click or drag file to this area to upload
       </p>
-      <p className="ant-upload-hint">
+      <p className="ant-upload-hint sm:text-xs">
         *.jpg, *.jpeg, *.pdf, *.doc, *.docx files only accepted
       </p>
-      <p className="ant-upload-hint">(File Size should not exceed 2MB)</p>
+      <p className="ant-upload-hint sm:text-xs">
+        (File Size should not exceed 2MB)
+      </p>
     </Dragger>
   );
 };

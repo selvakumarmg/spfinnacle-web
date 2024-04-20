@@ -15,7 +15,7 @@ export default function GetLoan() {
         <Heading
           size="2xl"
           as="h1"
-          className="mt-[400px] !font-lato leading-[50px] md:w-full"
+          className="mt-[400px] !font-lato leading-[50px] md:w-full md:mt-0 sm:w-full sm:mt-0 sm:!text-lg"
         >
           Fill out the form to receive your loan
         </Heading>

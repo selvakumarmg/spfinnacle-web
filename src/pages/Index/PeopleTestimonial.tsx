@@ -10,7 +10,7 @@ export default function PeopleTestimonial() {
             <Img
               src="images/img_ellipse_11.png"
               alt="tony_mathew_one"
-              className="relative z-[1] ml-[18px] h-[60px] w-[60px] sm:w-[40px] sm:h-[40px] rounded-[50%] "
+              className="relative z-[1] ml-[18px] h-[60px] w-[60px] sm:w-[40px] sm:h-[40px] rounded-[50%]"
             />
             <div className="relative mt-[-30px] sm:mt-[-25px] h-[230px] sm:h-[250px] self-stretch bg-white-A700 drop-shadow-2xl">
               <div className="absolute left-[18.00px] top-[17%] m-auto flex w-[50%] flex-col items-start sm:w-[50%]">
