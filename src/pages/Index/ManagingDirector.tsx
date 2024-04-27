@@ -21,9 +21,9 @@ export default function ManagingDirector() {
             as="p"
             className="mt-[9px] !text-gray-700_01 sm:!text-base sm:text-justify md:text-justify"
           >
-            Lorem ipsum dolor sit amet. Et accusamus necessitatibus eos ducimus
-            optio aut tempora natus. 33 cupiditate quis et odit dignissimos et
-            quaerat amet ut recusandae consequatur est <br />
+            &emsp;&emsp;Lorem ipsum dolor sit amet. Et accusamus necessitatibus
+            eos ducimus optio aut tempora natus. 33 cupiditate quis et odit
+            dignissimos et quaerat amet ut recusandae consequatur est <br />
             Lorem ipsum dolor sit amet. Et accusamus necessitatibus eos ducimus
             optio aut tempora natus. 33 cupiditate quis et odit dignissimos et
             quaerat amet ut recusandae consequatur est omnis quae eum voluptatum

@@ -11,9 +11,10 @@ interface Slide {
 export const slides: Slide[] = [
   {
     url: "images/ai-generated-8298890.jpg",
-    heading: "Step into your Dream Home with us",
+    heading:
+      "Unlock the Power of Your Finances: Discover Our Loan Offerings Now!",
     context:
-      "We make it easy for you to secure the ideal loan from India's premier lenders effortlessly.",
+      "Easily secure the perfect loan from India's top lenders with our hassle-free process.",
     button: {
       text: "Get Loan",
       onClick: () => {
@@ -23,9 +24,9 @@ export const slides: Slide[] = [
   },
   {
     url: "images/finance-4858797.jpg",
-    heading: "Join Our Team",
+    heading: "Ready to turn your dreams into reality?",
     context:
-      "Welcome to SP Finnacle, where we are passionate about innovation and creating meaningful impact. Join us in shaping the future of Accounting!",
+      "With our seamless loan services, you can access the funds you need to make it happen.",
     button: {
       text: "Join Us",
       onClick: () => {
@@ -38,8 +39,7 @@ export const slides: Slide[] = [
     url: "images/home-8692174.jpg",
     heading:
       "Unlock Your Financial Potential: Explore Our Loan Services Today!",
-    context:
-      "We make it easy for you to secure the ideal loan from India's premier lenders effortlessly.",
+    context: "Empowering ambitious individuals to reach new heights of success",
     button: {
       text: "Know More",
       onClick: () => {
@@ -50,9 +50,9 @@ export const slides: Slide[] = [
   {
     url: "images/money-2724235.jpg",
     heading:
-      "Unlock Your Financial Potential: Explore Our Loan Services Today!",
+      "Your Trusted Partner in Financial Growth: Start Your Loan Journey Today",
     context:
-      "We make it easy for you to secure the ideal loan from India's premier lenders effortlessly.",
+      "Experience peace of mind with our transparent process, competitive rates, and personalized support.",
     button: {
       text: "Know More",
       onClick: () => {

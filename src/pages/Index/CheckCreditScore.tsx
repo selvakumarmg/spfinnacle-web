@@ -16,7 +16,7 @@ const CheckCreditScore = () => {
             </Link>
           </h2>
           <p className="text-lg sm:text-xs font-normal text-[#555555] flex-1">
-            Horem ipsum dolor consectetuer Lorem simply dummy orem commo
+            Check Your Credit Score over Here
           </p>
         </div>
       </div>

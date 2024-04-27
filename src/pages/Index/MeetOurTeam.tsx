@@ -14,9 +14,9 @@ export default function MeetOurTeam() {
             as="p"
             className="!text-gray-700_01 sm:text-justify sm:!text-base"
           >
-            Lorem ipsum dolor sit amet. Et accusamus necessitatibus eos ducimus
-            optio aut tempora natus. 33 cupiditate quis et odit dignissimos et
-            quaerat amet ut recusandae consequatur est{" "}
+            Our team of experienced professionals is dedicated to helping you
+            find the right loan solution that meets your financial goals and
+            fits your budget.
           </Text>
         </div>
         <ManagingDirector />

@@ -21,23 +21,24 @@ const ImageCarousel = () => {
     <div className="max-w-full md:w-full h-[85vh] bg-no-repeat w-full m-auto relative group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="relative w-full h-full bg-center bg-slate-500 self-stretch bg-cover duration-500"
+        className="relative w-full h-full bg-center self-stretch bg-cover duration-500"
       >
+        <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-r from-[#E80D55]/50 z-1" />
         <div className="flex w-[60%] h-full gap-y-10 md:gap-y-5 sm:gap-y-5 justify-center flex-col px-20 md:w-[60%] md:px-10 sm:px-5 sm:w-[100%] sm:h-[95%] sm:justify-center">
           {slides[currentIndex].heading && (
-            <h1 className="font-semibold text-[40px] md:text-xl sm:text-lg text-[#FFFFFF]">
+            <h1 className="font-semibold text-[40px] md:text-xl sm:text-lg text-[#FFFFFF] z-0">
               {slides[currentIndex].heading}
             </h1>
           )}
           {slides[currentIndex].context && (
-            <p className="font-normal text-xl md:text-base sm:text-sm text-[#FFFFFF]">
+            <p className="font-normal text-xl md:text-base sm:text-sm text-[#FFFFFF] z-0">
               {slides[currentIndex].context}
             </p>
           )}
           {slides[currentIndex].button && (
             <button
               type="button"
-              className="w-52 rounded-lg h-16 bg-[#E80D55] hover:bg-[hsl(340,89%,58%)] text-[#FFFFFF] text-lg md:text-base font-medium md:w-28 md:h-10 sm:text-sm sm:w-28 sm:h-10"
+              className="w-52 rounded-lg h-16 bg-[#E80D55] hover:bg-[hsl(340,89%,58%)] text-[#FFFFFF] text-lg md:text-base font-medium md:w-28 md:h-10 sm:text-sm sm:w-28 sm:h-10 z-0"
               onClick={slides[currentIndex].button.onClick}
             >
               {slides[currentIndex].button.text}

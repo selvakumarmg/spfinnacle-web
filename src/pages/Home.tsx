@@ -6,7 +6,6 @@ import AboutPage from "./Index/AboutPage";
 import CareerPage from "./Index/CareerPage";
 import FooterPage from "./Index/FooterPage";
 import ImageCarousel from "./Index/ImageCarousel";
-import LoanForm from "./Index/LoanForm";
 import MeetOurTeam from "./Index/MeetOurTeam";
 import Navbar from "./Index/Navbar";
 import ProductPage from "./Index/ProductPage";
@@ -47,7 +46,6 @@ export default function Home() {
           companyLogoSrc={footerCmpny.companyLogoSrc}
           companyRights={footerCmpny.companyRights}
         />
-        <LoanForm />
         <ScrollToTopButton />
       </div>
     </>

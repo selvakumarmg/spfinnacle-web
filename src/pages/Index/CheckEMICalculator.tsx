@@ -12,11 +12,11 @@ const CheckEmiCalculator = () => {
         <div className="absolute left-40 sm:left-24 flex-1">
           <h2 className="mb-3 sm:text-sm text-2xl font-semibold text-[#E80D55] flex-1">
             <Link to="/emicalcualtor" target="_blank">
-              Check EMI Calcualtor
+              EMI Calcualtor
             </Link>
           </h2>
           <p className="text-lg sm:text-xs font-normal text-[#555555] flex-1">
-            Horem ipsum dolor consectetuer Lorem simply dummy orem commo
+            Check your EMI Rate in here
           </p>
         </div>
       </div>
