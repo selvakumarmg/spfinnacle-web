@@ -1,5 +1,6 @@
-import { Heading, Text } from "components";
+import { Heading } from "components";
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface NavLink {
   title: string;
@@ -17,24 +18,35 @@ const navigate = (url: string, target: string) => {
 };
 
 const FooterSection: React.FC<FooterSectionProps> = ({ title, links }) => (
-  <div className="flex flex-col items-start gap-[15px]">
+  <div className="flex flex-col items-start gap-[15px]" id="footer-page">
     <Heading size="md" as="p" className="!font-lato uppercase">
       {title}
     </Heading>
     <ul className="flex flex-col items-start gap-[13px]">
-      {links.map((link, index) => (
-        <li key={index}>
-          <a onClick={() => navigate(link.url, link.openIn)}>
-            <Text
-              size="md"
-              as="p"
+      {links.map((link, index) =>
+        title != "Talk To Us" ? (
+          <li key={index}>
+            <Link
+              to={link.url}
+              target={link.openIn}
+              rel="noopener noreferrer"
               className="!font-lato !text-white-A700_cc hover:cursor-pointer"
             >
               {link.title}
-            </Text>
-          </a>
-        </li>
-      ))}
+            </Link>
+          </li>
+        ) : (
+          <li key={index}>
+            <a
+              className="!font-lato !text-white-A700_cc hover:cursor-pointer"
+              onClick={() => navigate(link.url, link.openIn)}
+              rel="noopener noreferrer"
+            >
+              {link.title}
+            </a>
+          </li>
+        )
+      )}
     </ul>
   </div>
 );

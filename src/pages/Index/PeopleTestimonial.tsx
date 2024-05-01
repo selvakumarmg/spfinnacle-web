@@ -5,7 +5,7 @@ export default function PeopleTestimonial() {
   return (
     <div className="absolute bottom-[21%] right-[0.58px] m-auto flex w-[94%] flex-col items-start md:relative md:items-center sm:relative sm:w-full">
       <div className="mt-[60px] flex w-[93%] gap-[29px] md:w-[80%] md:flex-col md:p-5 sm:w-full sm:flex-col sm:p-5 sm:mt-0">
-        {window.innerWidth < 768 ? (
+        {window.innerWidth < 1050 ? (
           <div className="flex w-full flex-col items-start">
             <Img
               src="images/img_ellipse_11.png"

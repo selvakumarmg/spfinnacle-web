@@ -11,7 +11,7 @@ const CheckEmiCalculator = () => {
         </div>
         <div className="absolute left-40 sm:left-24 flex-1">
           <h2 className="mb-3 sm:text-sm text-2xl font-semibold text-[#E80D55] flex-1">
-            <Link to="/emicalcualtor" target="_blank">
+            <Link to="/emicalcualtor" target="_blank" rel="noopener noreferrer">
               EMI Calcualtor
             </Link>
           </h2>

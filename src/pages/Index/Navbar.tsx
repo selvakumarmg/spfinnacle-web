@@ -1,5 +1,6 @@
 // Navbar.tsx
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 interface MenuItem {
   name: string;
@@ -45,6 +46,7 @@ const Navbar: React.FC<NavbarProps> = ({ logo, menuItems }) => {
         <div>
           <a href="#home">{logo}</a>
         </div>
+
         {isMobile ? (
           <div>
             <button
@@ -85,7 +87,9 @@ const Navbar: React.FC<NavbarProps> = ({ logo, menuItems }) => {
               type="button"
               className="w-20 rounded-lg md:rounded-md h-8 border-2 border-[#E80D55] hover:bg-[#E80D55] text-[#E80D55] hover:text-[#FFFFFF] hover:border-[#FFFFFF] text-sm md:text-[10px] font-medium md:w-14 md:h-5 sm:text-sm sm:w-14 sm:h-5"
             >
-              Get Loan
+              <Link to="/loan-form" target="_blank">
+                Get Loan
+              </Link>
             </button>
           </div>
         )}
@@ -109,7 +113,9 @@ const Navbar: React.FC<NavbarProps> = ({ logo, menuItems }) => {
             type="button"
             className="w-full h-10 border-2 border-[#E80D55] hover:bg-[#E80D55] text-[#E80D55] hover:text-[#FFFFFF] hover:border-[#FFFFFF] text-base font-medium mx-auto"
           >
-            Get Loan
+            <Link to="/loan-form" target="_blank">
+              Get Loan
+            </Link>
           </button>
         </div>
       )}
